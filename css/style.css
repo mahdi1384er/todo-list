@@ -1,0 +1,140 @@
+/* to style cod defult */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --banafsh: #6d28d9;
+    --wihts: #ededed;
+    --withdscolors: #fff;
+    --blacks: #222;
+    --grys: #777;
+    --padings: 0.1rem;
+    --trinstions: all 0.3s linear;
+    --redcolors: #db2777;
+    --colorwihts: #f6f6f6;
+}
+
+
+body {
+    color: var(--blacks);
+    background-color: var(--wihts);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* to header */
+.contener {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-conter {
+    display: flex;
+}
+
+.slets {
+    display: flex;
+}
+
+
+
+form {
+    width: 25rem;
+    background-color: var(--colorwihts);
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    flex: 1;
+    border: none;
+}
+
+
+form input,
+form button {
+    border: none;
+    outline: none;
+    background-color: var(--colorwihts);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+form button {
+    color: var(--redcolors);
+    cursor: pointer;
+    transition-duration: 0.30s;
+}
+
+form button:hover {
+    background-color: var(--banafsh);
+    color: var(--wihts);
+    transition: 0.30s;
+}
+
+#todo-conter {
+    width: 25rem;
+}
+
+.filters-todos {
+    position: relative;
+    left: 400px;
+    bottom: 35px;
+    padding: 20px;
+    border-radius: 1rem;
+    ;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+.todo {
+    display: flex;
+    background-color: var(--colorwihts);
+    color: var(--banafsh);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+    border: 0.3px solid #6d28d9;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.todo span {
+    display: block;
+    padding: 0.5rem;
+    cursor: pointer;
+    ;
+}
+
+.fa-trash-can {
+    color: var(--redcolors);
+}
+
+.fa-square-check {
+    color: var(--banafsh)
+}
+
+.competed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
